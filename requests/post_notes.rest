@@ -1,0 +1,30 @@
+@HOSTNAME = http://localhost
+@BASE-URL = api/notes
+@PORT = 3001
+@CONTENT-TYPE = Content-Type: application/json
+############################################################
+POST {{HOSTNAME}}:{{PORT}}/{{BASE-URL}}
+{{CONTENT-TYPE}}
+
+{
+    "content": "hola soy una nueva nota desde rest",
+    "important": true
+}
+
+#############################################################
+
+POST {{HOSTNAME}}:{{PORT}}/{{BASE-URL}}
+{{CONTENT-TYPE}}
+
+{
+    "content": "hola soy una nota mas",
+    "important": true
+}
+
+##############################################################
+POST {{HOSTNAME}}:{{PORT}}/{{BASE-URL}}
+{{CONTENT-TYPE}}
+
+{
+    "content": ""
+}
